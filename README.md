@@ -12,7 +12,7 @@ Este projeto consiste em um formulário de abertura de chamado para suporte de T
 ## Tecnologias Utilizadas 🚀
 - **HTML** 
 - **CSS**
-- 
+
 ## Como acessar 🔗
 
 Você pode visualizar o projeto ao vivo através do link abaixo:
