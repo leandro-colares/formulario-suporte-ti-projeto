@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suporte de TI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Cadastre o problema que está enfrentando.</h3>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Formulário</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">Suporte de TI</h1>
+          <p>Descreva a sua situação e marque as opcionais.</p>
+          <form>
+            <div class="box-input">
+              <label for="title"
+                >Título:<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Um título para o seu problema atual"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="name"
+                >Nome:<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block"
+                placeholder="Seu nome completo"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="email"
+                >Email:<span class="required-field">*</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                class="block"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="phone"
+                >Telefone:<span class="required-field">*</span></label
+              >
+              <input
+                type="tel"
+                name="phone"
+                class="block"
+                placeholder="Digite seu telefone"
+                required
+              />
+            </div>
+            <div class="optional-box">
+              <p>Tipo de problema:<span class="required-field">*</span></p>
+              <ul class="optional-list">
+                <li>
+                  <input
+                    type="radio"
+                    id="acesso_sistema"
+                    name="optionals[]"
+                    value="acesso_sistema"
+                  />
+                  <label for="acesso_sistema">Sem acesso ao sistema</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="senha"
+                    name="optionals[]"
+                    value="senha"
+                  />
+                  <label for="senha">Esqueci minha senha</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="msg_erro"
+                    name="optionals[]"
+                    value="msg_erro"
+                  />
+                  <label for="msg_erro">Mensagem de erro</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="outros"
+                    name="optionals[]"
+                    value="outros"
+                  />
+                  <label for="outros">Outros:</label>
+                </li>
+              </ul>
+            </div>
+            <div class="box-input">
+              <label for="description"
+                >Descrição:<span class="required-field">*</span></label
+              >
+              <textarea
+                name="description"
+                id="description"
+                class="block"
+                placeholder="Aqui você descreve detalhadamente seu problema. "
+              ></textarea>
+            </div>
+            <div class="box-input">
+              <label for="urgency"
+                >Urgência:<span class="required-field">*</span></label
+              >
+              <input type="radio" id="baixa" name="urgency" />
+              <label for="baixa">Baixa</label>
+              <input type="radio" id="media" name="urgency" />
+              <label for="media">Média</label>
+              <input type="radio" id="alta" name="urgency" />
+              <label for="alta">Alta</label>
+            </div>
+            <div class="box-input">
+              <label for="tentativas"
+                >Tentativas:<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="tentativas"
+                id="tentativas"
+                class="block"
+                placeholder="Descreva quais passos você tentou"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="date"
+                >Data:<span class="required-field">*</span></label
+              >
+              <input
+                type="date"
+                name="data_problema"
+                id="data_problema"
+                class="block"
+                placeholder="Data do problema:"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <p>
+                Fotos ou prints do problema:<span class="required-field"
+                  >*</span
+                >
+              </p>
+              <input
+                type="file"
+                multiple
+                accept="image/png, image/jpg"
+                id="images"
+                required
+              />
+            </div>
+            <input type="submit" value="Enviar" class="btn-submit" />
+            <input type="reset" value="Limpar" class="btn-reset" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
